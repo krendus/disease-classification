@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Details for Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Fever">Fever:</label>
+        <input type="radio" id="FeverYes" name="Fever" value="1">
+        <label for="FeverYes">Yes</label>
+        <input type="radio" id="FeverNo" name="Fever" value="0">
+        <label for="FeverNo">No</label><br>
+
+        <label for="Cough">Cough:</label>
+        <input type="radio" id="CoughYes" name="Cough" value="1">
+        <label for="CoughYes">Yes</label>
+        <input type="radio" id="CoughNo" name="Cough" value="0">
+        <label for="CoughNo">No</label><br>
+
+        <label for="Fatigue">Fatigue:</label>
+        <input type="radio" id="FatigueYes" name="Fatigue" value="1">
+        <label for="FatigueYes">Yes</label>
+        <input type="radio" id="FatigueNo" name="Fatigue" value="0">
+        <label for="FatigueNo">No</label><br>
+
+        <label for="DB">DB:</label>
+        <input type="radio" id="DBYes" name="DB" value="1">
+        <label for="DBYes">Yes</label>
+        <input type="radio" id="DBNo" name="DB" value="0">
+        <label for="DBNo">No</label><br>
+
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="GenderMale" name="Gender" value="1">
+        <label for="GenderMale">Male</label>
+        <input type="radio" id="GenderFemale" name="Gender" value="0">
+        <label for="GenderFemale">Female</label><br>
+
+        <label for="BP">Blood Pressure (BP):</label>
+        <input type="radio" id="BPLow" name="BP" value="1">
+        <label for="BPLow">Low</label>
+        <input type="radio" id="BPNormal" name="BP" value="2">
+        <label for="BPNormal">Normal</label>
+        <input type="radio" id="BPHight" name="BP" value="3">
+        <label for="BPHight">High</label><br>
+
+        <label for="CL">Cholesterol (CL):</label>
+        <input type="radio" id="CLLow" name="CL" value="1">
+        <label for="CLLow">Low</label>
+        <input type="radio" id="CLNormal" name="CL" value="2">
+        <label for="CLNormal">Normal</label>
+        <input type="radio" id="CLHigh" name="CL" value="3">
+        <label for="CLHigh">High</label><br>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
